@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="odom2pose" type="odom2pose" name="odom2pose" clear_params="true" output="screen">
+    <remap from="~odom" to="/vins_estimator/camera_pose" />
+  </node>
+</launch>
